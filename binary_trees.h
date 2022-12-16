@@ -75,5 +75,11 @@ int binary_tree_is_avl(const binary_tree_t *tree);
 avl_t *avl_insert(avl_t **tree, int value);
 avl_t *avl_recu(avl_t **tree, int value);
 void balancer(avl_t **tree, int value);
+unsigned int countNodes(const binary_tree_t *tree);
+int isComplieteUtil(const binary_tree_t *tree, unsigned int index, unsigned int number_nodes);
+int isHeapUtil(const binary_tree_t *tree);
+int binary_tree_is_heap(const binary_tree_t *tree);
+heap_t *complete_insert(binary_tree_t *tree, int value, int index, int pos);
+heap_t *heap_insert(heap_t **root, int value);
 
 #endif /* _BINARY_TREES_H_ */
