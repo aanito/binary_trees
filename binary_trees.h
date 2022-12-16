@@ -86,4 +86,9 @@ bst_t *minValueNode(bst_t *root);
 bst_t *bst_remove(bst_t *root, int value);
 
 heap_t *array_to_heap(int *array, size_t size);
+
+heap_t *max(heap_t *tree);
+void recurse_extract(heap_t *tree);
+int heap_extract(heap_t **root);
+
 #endif /* _BINARY_TREES_H_ */
