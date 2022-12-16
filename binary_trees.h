@@ -82,4 +82,8 @@ int binary_tree_is_heap(const binary_tree_t *tree);
 heap_t *complete_insert(binary_tree_t *tree, int value, int index, int pos);
 heap_t *heap_insert(heap_t **root, int value);
 
+bst_t *minValueNode(bst_t *root);
+bst_t *bst_remove(bst_t *root, int value);
+
+
 #endif /* _BINARY_TREES_H_ */
